@@ -1,12 +1,16 @@
-import React from 'react';
+import { Typography } from 'antd'
 
-    const About: React.FC = () => {
-      return (
-        <div className="p-10">
-          <h1 className="text-4xl font-bold">About Page</h1>
-          <p className="mt-4 text-xl">This is the about page.</p>
-        </div>
-      );
-    };
+const { Title, Paragraph } = Typography
 
-    export default About;
+const About = () => {
+  return (
+    <div>
+      <Title>About</Title>
+      <Paragraph>
+        This is a sample about page.
+      </Paragraph>
+    </div>
+  )
+}
+
+export default About

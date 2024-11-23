@@ -1,21 +1,16 @@
-import React from 'react';
-    import { Routes, Route } from 'react-router-dom';
-    import Navbar from './components/Navbar';
-    import Hero from './components/Hero';
-    import CardGrid from './components/CardGrid';
-    import About from './pages/About';
-    import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Landing from './pages/Landing'
 
-    const App: React.FC = () => {
-      return (
-        <div className="App">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
-      );
-    };
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
+  )
+}
 
-    export default App;
+export default App

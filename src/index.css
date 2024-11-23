@@ -1,5 +1,13 @@
 @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+';
 
-    @import '~antd/dist/antd.css';
+/* Import Tailwind base styles */
+@tailwind base;
+
+/* Import custom component styles */
+@tailwind components;
+
+/* Import utility classes */
+@tailwind utilities;
